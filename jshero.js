@@ -44,16 +44,35 @@ function rotate(arr) {
 // let sample = 'hello'
 // console.log(sample.indexOf('o'))
 
-const indexOfIgnoreCase = (myString, itsIndex) => {
-	return myString.toLowerCase().indexOf(itsIndex.toLowerCase())
+// const indexOfIgnoreCase = (myString, itsIndex) => {
+// 	return myString.toLowerCase().indexOf(itsIndex.toLowerCase())
+// }
+
+// function indexOfIgnoreCase(a, b) {
+// 	let a1 = a.toLowerCase()
+// 	let b1 = b.toLowerCase()
+// 	return a1.indexOf(b1)
+// }
+
+// console.log(indexOfIgnoreCase('bIT', 'it'))
+
+// const secondIndexOf = (a, b) => {
+// 	let a1 = a.indexOf(b)
+// 	return a.indexOf(b, a1 + 1)
+// }
+
+// function secondIndexOf(s1, s2) {
+//   let firstIndex = s1.indexOf(s2);
+// 	console.log(`firstIndex is ${firstIndex}`)
+//   return s1.indexOf(s2, firstIndex + 1);
+// }
+
+const secondIndexOf = (s1, s2) => {
+	let firstIndex = s1.indexOf(s2)
+	let secondIndex = s1.indexOf(s2, firstIndex + 1)
+	return secondIndex
 }
 
-function indexOfIgnoreCase(a, b) {
-	let a1 = a.toLowerCase()
-	let b1 = b.toLowerCase()
-	return a1.indexOf(b1)
-}
 
-console.log(indexOfIgnoreCase('bIT', 'it'))
-
+console.log(secondIndexOf('hello', 'l'))
 
