@@ -82,7 +82,9 @@ const kiss = (hahalikan, hahalik) => {
   console.log(`Hinalikan ni ${hahalik} si ${hahalikan}!`);
 };
 
-createKiss('Callie', 'Bilog', kiss)
+kiss('Callie', 'Bilog')
+
+// createKiss('Callie', 'Bilog', kiss)
 
 // console.log(createKiss('Callie', hahalik))
 
